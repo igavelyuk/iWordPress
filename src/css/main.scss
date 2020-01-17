@@ -1,7 +1,7 @@
 $base-green-color:#2f913c;
 
 *{
- outline: 1px solid red;
+ // outline: 1px solid red;
 // font-family: "Confortaa Bold";
 }
 div.minus{
@@ -21,7 +21,9 @@ div.alertheight {
   background-color: #2f81a6;
   color:white;
   font-weight: bolder;
-  padding-left: 50px;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: -1.4px;
 }
 img.logo{
   float: left;
@@ -51,6 +53,14 @@ i.search-margin{
 input.search-size{
   width: 196px!important;
   height: 32px;
+  border: 0;
+  border-bottom: 1px solid #d4d4d4;
+}
+.btn-outline-secondary{
+  border: 0;
+}
+.btn-outline-secondary:hover{
+  background-color: white;
 }
 .login-menu-lock-icon{
   font-size: 12px!important;
@@ -111,12 +121,12 @@ div.second-nav{
 .mainsection{
 position: absolute;
 float: left;
-top:147px;
+top:181px;
 left:0px;
 width: 100%;
 margin-top: 55px;
 height: 672px;
-background-image: url('/img/Home.jpg');
+background-image: url('../img/Home.jpg');
 }
 .subpersonal{
   float: none;
@@ -165,6 +175,21 @@ font-family: sans-serif;
     color: #222021!important;
   }
 }
+.subabout{
+  float: left;
+  overflow: visible;
+  top:55px;
+  padding:0;
+  list-style:none;
+  display:none;
+  width:auto;
+  border-top: 1px solid #aaa;
+  position: relative;
+  background-color: rgba(235,235,235,0.8);
+  padding: 55px 20px 20px 20px;
+  z-index: 2;
+}
+
 div.slogan{
   width: auto;
   margin-top:256px;
@@ -184,7 +209,7 @@ div.form-main-login{
       color:white;
       font-weight: bolder;
     }
-    padding: 40px;
+    padding: 58px 40px 40px 40px;
     height: 545px;
     width: 542px;
     background-color: rgba(29,52,99,0.8);
@@ -211,14 +236,98 @@ div.form-main-login{
       color: white;
     }
     .drop-styled{
-      width: 100%;
+      width: 99%;
+      margin-top: 4px;
+      margin-bottom: 2px;
     }
     div, input, label{
       margin-top:3px;
+      margin-bottom:3px;
+      border-radius: 0px;
+    }
+    .drop-styled{
+      border-radius: 0px;
+      background-color: white;
+      border: none;
+      color:black;
+      font-size: 20px;
+      margin: 0px;
+      text-align: left;
+      content: "";
+      .arrow-down{
+        min-width: 100%;
+        width: auto !important;
+        width: 100%;
+        margin: 0 auto -142px;
+
+        width:60px;
+        height:40px;
+        margin:0 0 0 -30px;
+        position:absolute;
+        left:57%;
+        bottom:0px;
+        transform: scale(0.2);
+      }
+      .left{
+        position:absolute;
+        height:10px;
+        width:80px;
+        background:#2f81a6;
+        -webkit-transform:rotate(240deg);
+        top:10px;
+        left:10px;
+        -webkit-border-radius:2px;
+        -webkit-transform-origin:5px 50%;
+        -webkit-transform:rotate(225deg);
+      }
+
+      .right{
+        position:absolute;
+        height:10px;
+        width:80px;
+        background:#2f81a6;
+        -webkit-transform:rotate(-60deg);
+        top:10px;
+        left:10px;
+        -webkit-border-radius:2px;
+        -webkit-transform-origin:5px 50%;
+        -webkit-transform:rotate(-45deg);
+      }
+    }
+    .dropdown-item{
+      color: black;
+    }
+    .topspaceado{
+      padding-top: 10px;
+      padding-left: 8px;
+    }
+    a.adolinks{
+      text-decoration: underline;
+      top: 6px;
+      font-size: 13px
+      :nth-child(2n){
+        margin-left: 22px;
+      }
+    }
+    .secoado{
+      margin-left: 34px;
+      text-decoration: underline;
+    }
+    .thdado{
+      margin-left: 8px;
+      text-decoration: underline;
+    }
+    a.btn-primary{
+      border-color: black!important;
     }
     a.btn{
-      margin-top:8px;
-      margin-bottom:8px;
+      margin-top:0px;
+      margin-left: 3px;
+      margin-bottom:12px;
+    }
+    .drop-styled{
+      margin-top: 4px!important;
+      margin-bottom: 2px!important;
     }
   }
 }
@@ -233,14 +342,14 @@ padding: 3%;
   .second-section-a{
     margin: 20px;
     padding: 40px;
-    background-image: url('/img/SectionTwo.jpg');
+    background-image: url('../img/SectionTwo.jpg');
     height: 500px;
     width: auto;
   }
   .second-section-b{
     margin: 20px;
     padding: 40px;
-    background-image: url('/img/SectionThree.jpg');
+    background-image: url('../img/SectionThree.jpg');
     height: 500px;
     width: auto;
   }

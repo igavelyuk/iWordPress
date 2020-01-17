@@ -54,7 +54,7 @@
 <body>
 
 <div class="alertheight alert alert-dark" role="alert">
-  A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+  In observance of Veterans Day, we will be closed Monday, November 11. We will resume normal business hours Tuesday, November 12
 </div>
 <nav class="navheight">
   <div class="block-nav">
@@ -90,7 +90,7 @@
         <a class="nav-link nav-link-style" href="#">Resources</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-link-style" href="#">About</a>
+        <a id="About" class="nav-link nav-link-style" href="#">About</a>
       </li>
       <li class="nav-item login-menu">
         <a href="#" class="login-menu btn btn-primary btn-lg active" role="button" aria-pressed="true"><i class="login-menu-lock-icon fas fa-lock"></i> LOGIN</a>
@@ -199,6 +199,31 @@
     </div>
   </div>
 
+  <!-- menue about -->
+  <div class="container-fluid zeromargins">
+    <div class="row subabout zeromargins">
+      <div class="row">
+        <div class="col minus">
+          <h2>About</h2>
+          <ul class="personal-sub">
+            <li class="spacing-li">
+              <a href="#">Meet Park</a>
+            </li>
+            <li class="spacing-li">
+              <a href="#">Community</a>
+            </li>
+            <li class="spacing-li">
+              <a href="#">Meet the Team</a>
+            </li>
+            <li class="spacing-li">
+              <a href="#">Careers</a>
+            </li>
+            <li class="spacing-li">
+              <a href="#">News</a>
+            </li>
+          </ul>
+        </div></div></div></div>
+  <!-- menue about -->
   <section class="mainsection">
     <div class="container-fluid">
   <div class="row">
@@ -217,8 +242,12 @@
           <h3 class="account-login">Account Login</h3>
           <label for="dropdownMenuLink">Account Type</label>
           <div class="dropdown drop-styled input-group-lg">
-            <a class="btn btn-secondary dropdown-toggle drop-styled" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Personal Banking
+            <a class="btn btn-secondary drop-styled" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span>Personal Banking</span>
+              <div class="arrow-down">
+                <div class="left"></div>
+                <div class="right"></div>
+              </div>
             </a>
 
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -229,18 +258,20 @@
           </div>
           <div class="form-group input-group-lg">
             <label for="usernamemainlogin">Username</label>
-            <input type="text" class="form-control" id="usernamemainlogin" placeholder="Example input">
+            <input type="text" class="form-control" id="usernamemainlogin" placeholder="">
           </div>
           <div class="form-group input-group-lg">
             <label for="formGroupExampleInput2">Password</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
           </div>
-          <a href="#">Forgot Username?</a>
-          <a href="#">Forgot Password?</a>
+          <div class="topspaceado">
+            <a class="adolinks" href="#">Forgot Username?</a>
+            <a class="adolinks secoado" href="#">Forgot Password?</a>
+          </div>
           <br>
           <a class="btn btn-primary login-menu" href="#" role="button"><i class="login-menu-lock-icon fas fa-lock"></i> LOG IN</a>
           <br>
-          <a href="#">Enroll Now for Online Banking</a>
+          <a class="adolinks thdado" href="#">Enroll Now for Online Banking</a>
         </form>
       </div>
     </div>
