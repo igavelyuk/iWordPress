@@ -119,9 +119,10 @@ div.second-nav{
   margin-top: 70px;
 }
 .mainsection{
+display: block;
 position: absolute;
 float: left;
-top:181px;
+top:148px;
 left:0px;
 width: 100%;
 margin-top: 55px;
@@ -332,24 +333,27 @@ div.form-main-login{
   }
 }
 section.second-section{
-top: 52rem;
+display: block;
+position: inherit;
+top: 53rem;
+height: 500px;
 left: 0px;
 position: absolute!important;
 height: 500px;
 width: 100%;
 margin: auto;
-padding: 3%;
+padding: 39px;
   .second-section-a{
     margin: 20px;
     padding: 40px;
-    background-image: url('../img/SectionTwo.jpg');
+    background-image: url('./../img/SectionTwo.jpg');
     height: 500px;
     width: auto;
   }
   .second-section-b{
     margin: 20px;
     padding: 40px;
-    background-image: url('../img/SectionThree.jpg');
+    background-image: url('./../img/SectionThree.jpg');
     height: 500px;
     width: auto;
   }
@@ -361,5 +365,87 @@ padding: 3%;
   }
   .link{
     margin-top: 43px;
+  }
+}
+section.void{
+  height: 82rem;
+  width: 99%;
+}
+section.third-section{
+  height: 390px;
+  width: 100%;
+  .col{
+  display: flex;
+  }
+  .h5s16{
+    margin-top:29px;
+    font-size: 28px;
+    font-weight: bolder;
+  }
+  .s16{
+    padding:0;
+    margin: 0;
+    font-size: 20px;
+  }
+    div.col-rpadding10{
+    padding-left: 37px;
+    padding-right: 0px;
+    }
+    div.col-rpadding20{
+    padding-right: 49px;
+    }
+    div.icon-article{
+    display: flex;
+    top: 74px;
+    height: 200px;
+    width: 100px;
+    margin: 11px;
+    img.icon-section-three{
+      margin-top: 64px;
+      margin-left: 15px;
+      top:0px;
+      left:0px;
+      height: 74px;
+      width: 74px;
+    }
+  }
+  div.text-article{
+    display: flex;
+    margin: 20px;
+    display: inline-block;
+  }
+}
+section.six-section{
+  height: 390px;
+  width: 100%;
+}
+.custom-article-button{
+  width: 188px;
+  height: 50px;
+  background-color: #2F81A6;
+  color: #FFFEFF;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: sans-serif;
+  padding-top: 12px;
+  font-weight: bolder;
+}
+.four-section{
+  height: 550px;
+  width: 100%;
+  background-image: url('./../img/sectionfour.png');
+  background-size: contain;
+  background-size: 100%;
+  background-position-y: bottom 3px;
+  div.col{
+    padding:117px 416px 0px 416px;
+  }
+  h5{
+    color: white;
+    font-size: 45px;
+  }
+  p{
+    color: white;
+    font-size: 33px;
   }
 }
