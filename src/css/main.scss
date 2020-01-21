@@ -1,7 +1,7 @@
 $base-green-color:#2f913c;
 
 *{
- // outline: 1px solid red;
+// outline: 1px solid red;
 // font-family: "Confortaa Bold";
 }
 div.minus{
@@ -127,7 +127,7 @@ left:0px;
 width: 100%;
 margin-top: 55px;
 height: 672px;
-background-image: url('../img/Home.jpg');
+background-image: url('./../img/Home.jpg');
 }
 .subpersonal{
   float: none;
@@ -451,6 +451,11 @@ section.six-section{
 }
 .five-section{
   padding:82px 174px 78px 174px;
+ .border-five{
+    border: 2px solid #D3D3D3;
+    border-radius: 3px;
+    padding-bottom: 30px;
+  }
   div.five{
     h5{
       font-size: 40px;
@@ -462,11 +467,12 @@ section.six-section{
       font-family: sans-serif;
       margin-bottom: 34px;
     }
-    padding:38px 57px 9px 34px;
+    padding:5% 5% 1% 5%;
   }
   .topimagelink{
-    height: 420px;
-    width:auto;
+    max-width: 100%;
+    // height: 420px;
+    height:auto;
   }
   .img-containerscale{
     overflow: hidden;
@@ -484,4 +490,86 @@ section.six-section{
     transform: scale(1.1);
   }
 }
+}
+section.six-section{
+  height:700px;
+  background-color: #EBEBEB;
+  .six-slogan{
+    margin:11% 5% 0px 9%;
+    h5{
+      font-size: 45px;
+      font-family: serif;
+    }
+    p{
+      font-size: 20px;
+      font-family: sans-serif;
+    }
+  }
+  // div.box-model{
+  //   display: block;
+  //   margin-top:50px;
+  //   width:900px;
+  //   height:592px;
+  //   background-image: url('./../img/videocover.png');
+  // }
+  // div.playbutton{
+  //   float: left;
+  //   display: block;
+  //   background-image: url('./../img/play-button.png');
+  //   top:45%;
+  //   left:45%;
+  //   width:200px;
+  //   height:200px;
+  // }
+  .zero-margins{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+  img.play-pre{
+    margin: 5% 0% 0px 6%;
+    width: 96%;
+  }
+  img.button-play{
+    float: left;
+    position: absolute;
+    top: 39%;
+    left: 48%;
+    height: 21%;
+    width: auto;
+    // color: rgba(255,255,255,0.5);
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+  }
+  img.button-play:hover{
+    float: left;
+    position: absolute;
+    top: 39%;
+    left: 48%;
+    height: 21%;
+    width: auto;
+    // color: rgba(255,255,255,0.5);
+    animation: playme 3s infinite alternate;
+    cursor: pointer;
+  }
+  @keyframes playme {
+    0% {
+      opacity: 0.3;
+      filter: alpha(opacity=30);
+    }
+    100% {
+      opacity: 0.9;
+      filter: alpha(opacity=90);
+    }
+  }
+  #playerone{
+    display: grid;
+    float:none;
+    margin-top:50px;
+    margin: 5% 0% 0px 6%;
+    width: 96%;
+  }
+}
+footer{
+  height:650px;
+  background-color: #1F3564;
 }
