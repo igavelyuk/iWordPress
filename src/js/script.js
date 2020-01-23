@@ -61,9 +61,10 @@ $("#playbotton").click(function(){
 $("#About").hover(
 function () {
    $('.subabout').fadeIn("slow");
+   var secondpos = $(window).width();
    var pos = $( "#About" ).position();
    $('.subabout').css({position:'relative'});
-   $('.subabout').css('left', pos.left-300);
+   $('.subabout').css('left', pos.left + secondpos/2);
 },
 function () {
    $('.subabout').fadeOut();
@@ -81,10 +82,11 @@ function () {
 
 $(".subabout").hover(
 function () {
-   $('.subabout').fadeIn();
-   var pos = $( "#About" ).position();
-   $('.subabout').css({position:'relative'});
-   $('.subabout').css('left', pos.left-300);
+  $('.subabout').fadeIn("slow");
+  var secondpos = $(window).width();
+  var pos = $( "#About" ).position();
+  $('.subabout').css({position:'relative'});
+  $('.subabout').css('left', pos.left + secondpos/2);
 },
 function () {
    $('.subabout').fadeOut("slow");
